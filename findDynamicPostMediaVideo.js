@@ -16,6 +16,7 @@ t.full_scenes.find(
 	}, 
 	{ 'montage.montage_id' : 1} 
 )
+.sort( { 'montage.montage_id' : -1 } )
 .limit(100)
 .forEach(printjson);
 
