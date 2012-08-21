@@ -5,7 +5,7 @@ t.full_scenes.find(
 	function() { 
 		for (montage in this) { 
 			if (this[montage]) {
-				if (this[montage].montage_id == 389) {
+				if (this[montage].montage_id == 389 && this.parent == '2bfbb49d320aef5643f4edf5897fbe6e49e32e78') {
                 	return true;
                 }
             }
