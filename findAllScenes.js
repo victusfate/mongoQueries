@@ -11,7 +11,11 @@ t.full_scenes.find(
             }
         }
         return false; 
-	}
+	},
+	{  
+      'start' : 1,
+      'hash' : 1
+    } 
 )
 .sort( { 'start' : 1 } )
-.forEach(printjson);
+.forEach( function(x) { print(x.hash) } );
